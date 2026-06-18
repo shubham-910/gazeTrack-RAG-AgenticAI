@@ -1,0 +1,7 @@
+# Redirect MediaPipe face_mesh WASM/JS binary requests to the CDN
+# This prevents the SPA catch-all from returning index.html for these assets
+/*/face_mesh_solution*  https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/:splat  301
+/face_mesh_solution*    https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/:splat  301
+
+# SPA catch-all (must be LAST)
+/* /index.html 200

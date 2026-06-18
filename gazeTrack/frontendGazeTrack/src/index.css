@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-theme-background text-theme-text font-sans antialiased;
+    font-family: 'Outfit', sans-serif;
+    background: radial-gradient(circle at top right, #1e1b4b, #0f172a 60%);
+    overflow-x: hidden;
+  }
+}
+
+#webgazerVideoContainer {
+    position: fixed !important;
+    top: 20px !important;
+    left: 160px !important; /* Shifted to reveal the top-left calibration point */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+/* Custom Scrollbar for modern dashboards */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Custom Glassmorphic overrides for React-Toastify alerts */
+.Toastify__toast {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  color: #f1f5f9 !important;
+  font-family: 'Outfit', sans-serif !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.Toastify__toast--success {
+  border-color: rgba(16, 185, 129, 0.35) !important;
+}
+
+.Toastify__toast--error {
+  border-color: rgba(239, 68, 68, 0.35) !important;
+}
+
+.Toastify__toast--warning {
+  border-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+.Toastify__toast--info {
+  border-color: rgba(99, 102, 241, 0.35) !important;
+}
+
+.Toastify__close-button {
+  color: #94a3b8 !important;
+  opacity: 0.7;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
+.Toastify__progress-bar {
+  background: linear-gradient(to right, #6366f1, #10b981) !important;
+}
