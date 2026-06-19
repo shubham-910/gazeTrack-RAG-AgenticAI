@@ -136,7 +136,7 @@ The communication between the React frontend and Django backend follows standard
 ![Home Page](assets/Homepage.png)
 
 ### Analytics Page (Biometric & Attention Bias Tracking)
-![Insight Page](assets/InsightPage.png)
+![Insight Page](assets/Insightpage.png)
 
 ### RAG Chat Interface (Semantic Historical Guidance)
 ![Insight Page (continue)](assets/Chat-insight1.png)
