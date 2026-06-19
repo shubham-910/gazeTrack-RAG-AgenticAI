@@ -6,6 +6,8 @@ By prioritizing patient privacy and compliance (utilizing de-identified server-s
 
 ---
 
+## Try it here with hosted link: [Live Link](https://gazetrack-frontend.vercel.app/login)
+
 ## Key Objectives & Clinical Goals
 
 - **Secure Session Management & Onboarding**: Implements secure user authentication (JWT-based token system) to protect sensitive assessment histories.
